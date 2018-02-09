@@ -1,0 +1,6 @@
+.navbar-default .navbar-nav>li>a {
+    text-transform: none;
+}
+.site-header.navbar-sm .navbar-brand>img {
+    max-height:33px;
+}
