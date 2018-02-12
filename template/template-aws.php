@@ -6,7 +6,7 @@
         <article class="col-md-12 main-content" role="main">
             <header>
                 <h1>AWS</h1>
-                <p>Intro of AWS</p>
+                <p>Pending update</p>
             </header>
         </article>
     </div>

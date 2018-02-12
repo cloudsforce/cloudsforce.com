@@ -4,3 +4,11 @@
 .site-header.navbar-sm .navbar-brand>img {
     max-height:33px;
 }
+.center-block {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+blockquote {
+    font-size: inherit;
+    font-family: inherit;
+}

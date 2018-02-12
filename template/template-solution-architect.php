@@ -6,7 +6,7 @@
         <article class="col-md-12 main-content" role="main">
             <header>
                 <h1>Solution Architect</h1>
-                <p>Intro of SA</p>
+                <p>Pending update</p>
             </header>
         </article>
     </div>

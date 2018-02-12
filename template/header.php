@@ -26,7 +26,7 @@ if(!in_array($_SERVER['REMOTE_ADDR'], array(
 
     <!-- Styles -->
     <link href="<?php echo $file_path; ?>assets/css/theDocs.all.min.css" rel="stylesheet">
-    <link href="<?php echo $file_path; ?>assets/css/skin/skin-dark.css" rel="stylesheet">
+    <link href="<?php echo $file_path; ?>assets/css/skin/skin-blue.css" rel="stylesheet">
     <link href="<?php echo $file_path; ?>assets/css/custom.css" rel="stylesheet">
 
     <!-- Fonts -->
@@ -68,15 +68,15 @@ if(!in_array($_SERVER['REMOTE_ADDR'], array(
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Public Clouds <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a href="<?php echo $domain_url; ?>public-clouds/aws">AWS</a></li>
                     <li><a href="<?php echo $domain_url; ?>public-clouds/alicloud">Alibaba Cloud</a></li>
+                    <li><a href="<?php echo $domain_url; ?>public-clouds/aws">AWS</a></li>
                     <li><a href="<?php echo $domain_url; ?>public-clouds/azure">Azure</a></li>
                     <li><span style="padding:8px 20px;display:block;font-weight:100">coming more..</span></li>
                   </ul>
                 </li>
                 <li><a href="<?php echo $domain_url; ?>solution-architect">Solution Architect</a></li>
                 <li><a href="<?php echo $domain_url; ?>cost-calculator">Cost Calculator</a></li>
-                <li><a href="#">Case Studies</a></li>
+                <!-- <li><a href="#">Case Studies</a></li> -->
               </ul>
             </div>
             <!-- END Top navbar -->
