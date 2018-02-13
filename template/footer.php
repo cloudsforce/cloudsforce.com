@@ -24,5 +24,6 @@
     <script src="<?php echo $file_path; ?>assets/js/theDocs.all.min.js"></script>
     <script src="<?php echo $file_path; ?>assets/js/custom.js"></script>
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.16/datatables.min.js"></script>
   </body>
 </html>

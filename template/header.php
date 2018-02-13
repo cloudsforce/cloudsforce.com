@@ -28,6 +28,7 @@ if(!in_array($_SERVER['REMOTE_ADDR'], array(
     <link href="<?php echo $file_path; ?>assets/css/theDocs.all.min.css" rel="stylesheet">
     <link href="<?php echo $file_path; ?>assets/css/skin/skin-blue.css" rel="stylesheet">
     <link href="<?php echo $file_path; ?>assets/css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.10.16/datatables.min.css"/>
 
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Raleway:100,300,400,500%7CLato:300,400' rel='stylesheet' type='text/css'>

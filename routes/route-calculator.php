@@ -19,3 +19,11 @@ $app->get('/cost-calculator/ec2-pricing', function ($request, $response, $args) 
     ]);
 
 });
+
+$app->get('/cost-calculator/ecs-pricing', function ($request, $response, $args) {
+
+    return $this->view->render($response, 'template-cost-calculator-ecs.php', [
+        'title' => 'Alibaba ECS Pricing Index | Cloudsforce.com'
+    ]);
+
+});
