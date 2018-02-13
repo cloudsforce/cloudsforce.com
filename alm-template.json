@@ -1,0 +1,37 @@
+{
+    "version": "2017-03-03",
+    "label": "cloudsforce beta #1",
+    "description": "This template creates a Ubuntu+PHP+Apache stack on Alibaba Cloud with one ECS instance and a customized subnet settings, and deploys this github repository as application code.",
+    "vendor": {
+        "alicloud": {
+            "cred": "LTAIhPYL7IW93cPt",
+            "region": "ap-northeast-1"
+        }
+    },
+    "configurations": [
+        {
+            "role": "web",
+            "flag": "Single",
+            "provision": {
+                "instance_type": "ecs.n4.small",
+                "instance_count": 1,
+                "keypair": true,
+                "subnet": {
+                    "cidr": "10.0.1.0/24",
+                    "public": true,
+                    "auto_assign_public_ip": true
+                },
+                "availability_zone": "ap-northeast-1a"
+            },
+            "container": {
+                "container_image": "mobingi/ubuntu-apache2-php7:7.1",
+                "container_code_dir": "/var/www/html",
+                "container_git_repo": "https://github.com/cloudsforce/cloudsforce.com.git",
+                "container_git_reference": "master",
+                "container_ports": [
+                    80
+                ]
+            }
+        }
+    ]
+}
