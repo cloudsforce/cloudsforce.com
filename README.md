@@ -28,3 +28,8 @@ Each markdown file represents a single page found on cloudsforce.com.
 For the page routing structures you can check on `routes` folder for reference.
 
 Leave your comment on issues or create pull request when contributing.
+
+
+# Sponsors
+
+This project is hosted on [Alibaba Cloud](https://alibabacloud.com), and deployed using [Mobingi ALM](https://mobingi.com/products/alm).
