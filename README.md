@@ -1,7 +1,7 @@
 # What is Cloudsforce.com
-A community driven, cloud resource and experience sharing collaboration website.
+A community driven, pubic cloud platforms resource and knowledge sharing website.
 
-The goal of this open source repo is to minimize the operation of running such site, while having community members to collaborate on its contents.
+The goal of this open source repo is to have community members to collaborate on its contents while minimizing the operation of running the website.
 
 
 # Installations
@@ -18,10 +18,13 @@ Then navigate into code source folder, and run:
 composer install
 ```
 
+
 # Contribution Folders
 
-The project owners will maintain the structure and code logic of this repo, while contributors mostly working on `markdown` folers only.
+The project owners will maintain the structure and code logic of this repo, while contributors mostly working on [markdown](https://github.com/cloudsforce/cloudsforce.com/tree/master/markdown) folers only.
 
 Each markdown file represents a single page found on cloudsforce.com.
 
 For the page routing structures you can check on `routes` folder for reference.
+
+Leave your comment on issues or create pull request when contributing.
