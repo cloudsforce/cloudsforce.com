@@ -6,12 +6,13 @@
 
         <div class="row">
           <div class="col-md-6 col-sm-6">
-            <p>Github</p>
+            <p><!-- Place this tag where you want the button to render. -->
+                <a class="github-button" href="https://github.com/cloudsforce/cloudsforce.com/fork" data-icon="octicon-repo-forked" data-size="large" aria-label="Fork cloudsforce/cloudsforce.com on GitHub">Fork on Github</a></p>
           </div>
           <div class="col-md-6 col-sm-6">
             <ul class="footer-menu">
-              <li><a href="">Contributors</a></li>
-              <li><a href="">About us</a></li>
+              <li><a href="https://github.com/cloudsforce/cloudsforce.com/graphs/contributors">Contributors</a></li>
+              <li><a href="https://github.com/cloudsforce/cloudsforce.com/blob/master/README.md">About us</a></li>
             </ul>
           </div>
         </div>
@@ -22,6 +23,6 @@
     <!-- Scripts -->
     <script src="<?php echo $file_path; ?>assets/js/theDocs.all.min.js"></script>
     <script src="<?php echo $file_path; ?>assets/js/custom.js"></script>
-
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>
 </html>

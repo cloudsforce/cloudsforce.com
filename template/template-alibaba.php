@@ -18,6 +18,9 @@ $content = file_get_contents(realpath(__DIR__ . '/..').'/markdown/alibaba.md');
 <main class="container">
     <div class="row">
         <article class="col-md-12 main-content" role="main">
+            <p>
+            <span class="pull-right"><a class="github-button" href="https://github.com/cloudsforce" data-size="large" aria-label="Follow @cloudsforce on GitHub">Follow @cloudsforce</a></span>
+            </p>
             <?php echo $parser->text($content); ?>
         </article>
     </div>

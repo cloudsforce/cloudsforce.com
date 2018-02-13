@@ -64,7 +64,7 @@ if(!in_array($_SERVER['REMOTE_ADDR'], array(
             <!-- Top navbar -->
             <div id="navbar" class="navbar-collapse collapse" aria-expanded="true" role="banner">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="">The Facts</a></li>
+                <li class="active"><a href="<?php echo $domain_url; ?>">The Facts</a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Public Clouds <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
