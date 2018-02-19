@@ -12,7 +12,7 @@
                 </p>
                 <p>
                     <a href="<?php echo $domain_url; ?>cost-calculator/ec2-pricing"><button type="button" class="btn btn-warning">AWS EC2 Pricing Index</button></a>
-                    <a href="<?php echo $domain_url; ?>cost-calculator/ecs-pricing"><button type="button" class="btn btn-info">Alibaba Cloud EC2 Pricing Index</button></a>
+                    <a href="<?php echo $domain_url; ?>cost-calculator/ecs-pricing"><button type="button" class="btn btn-info">Alibaba Cloud ECS Pricing Index</button></a>
                 </p>
             </header>
         </article>
