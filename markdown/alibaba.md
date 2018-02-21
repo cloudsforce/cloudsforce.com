@@ -3,13 +3,13 @@
 ![alt text](https://learn-cdn.mobingi.com/cloudsforce/alibaba-iaas-landscape-v2.png "Alibaba Cloud IaaS Products Landscape")
 
 
-## Foundation Services
+##Foundation Services
 
-- ### Networking {#networking}
+- ## 1.Networking {#networking}
 
-    ```
+    `
     Cloud IaaS platform's native networking products are one of the fundamental components that enable customers to isolate cloud infrastructure, scale application requests handling capacity, and connect physical network to the private virtual network.
-    ```
+    `
 
     Alibaba Cloud provides a full set of networking products that includes:
 
@@ -17,13 +17,13 @@
     | -------- |:------------- | :------------|
     | [VPC](https://www.alibabacloud.com/product/vpc)       | Virtual Private Cloud        | Isolate cloud resources with customer's own private virtual network       |
     | [Server Load Balancer](https://www.alibabacloud.com/product/server-load-balancer)       | Load Balancing        | Automatically distribute application traffic across multiple compute instances in the cloud       |
-    | **Express Connect**      | Dedicated Network Connections to Alibaba Cloud        | Dedicated network connection between your network and your Alibaba Cloud VPC       |
-    | **Cloud DNS**       | Domain Name Service (DNS)        | Highly available and scalable cloud DNS to connect user requests to your cloud resources       |
-    | **CDN**       | Content Delivery Network        | Highly distributed content delivery network in the cloud     |
+    | [Express Connect](https://www.alibabacloud.com/product/express-connect)      | Dedicated Network Connections to Alibaba Cloud        | Dedicated network connection between your network and your Alibaba Cloud VPC       |
+    | [Cloud DNS](https://www.alibabacloud.com/product/dns)       | Domain Name Service (DNS)        | Highly available and scalable cloud DNS to connect user requests to your cloud resources       |
+    | [CDN](https://www.alibabacloud.com/product/cdn)       | Content Delivery Network        | Highly distributed content delivery network in the cloud     |
 
 
 
-    This section gives a high level view of networking products.
+    This section gives a high level view of __networking__ products.
 
     ------
     - #### VPC
@@ -134,8 +134,64 @@
 
 
 
-- ### Compute {#compute}
-    Pending update
+- ## 2.Compute {#compute}
+
+    `
+    Cloud IaaS platform's native compute service provides resizable cloud-based compute capacity in the form of virtual servers. It allows us to provision one or thousands of instances simultaneously, and pay only for what we use, making web-scale cloud computing easy.
+    `
+
+    Alibaba Cloud provides a full set of networking products that includes:
+
+    | Service    | Product Type  | Description   |
+    | -------- |:------------- | :------------|
+    | [Elastic Compute Service](https://www.alibabacloud.com/product/ecs)       | Elastic Compute        | Secure, resizable and scalable compute capacity       |
+    | [Auto Scaling](https://www.alibabacloud.com/product/auto-scaling)       | Auto Scale        | Dynamically scale ECS capacity up or down automatically       |
+    | [Container Service](https://www.alibabacloud.com/product/container-service)      | Container Orchestration        | Fully managed cloud container orchestration service       |
+    | [Elastic GPU Service](https://www.alibabacloud.com/product/gpu)       | Parallel Compute        | GPU-based computing service suited for high-demand computing     |
+
+
+
+    This section gives a high level view of __compute__ products.
+
+    ------
+    - #### Elastic Compute Service
+
+        On Alibaba Cloud official website, it states:
+        
+        > Alibaba Cloud Elastic Compute Service (ECS) provides fast memory and the latest Intel CPUs to help you to power your cloud applications and achieve faster results with low latency. All ECS instances come with Anti-DDoS protection to safeguard your data and applications from DDoS and Trojan attacks.
+        
+        If you are familiar with AWS, the Alibaba Cloud ECS is the equivalent product to AWS EC2. What's interesting here is that the average price of ECS is __roughly 15% to 17% cheaper__ than EC2, as of Jan, 2018. You can check the ECS pricing [here](http://cloudsforce.com/cost-calculator/ecs-pricing). Alibaba ECS provides these features:
+        
+        - Multiple instance configuration / instance family
+        - Multiple regions and zones
+        - Machine image resources
+        - Multiple storage methods _(Basic Cloud Disks, Ultra Cloud Disks, and SSD Cloud Disks)_
+        - Robust network and security
+        - Management can be done through console, VNC, and APIs
+        - Two payment types: Subscription _(reserved)_ and Pay-As-You-Go _(on-demand)_
+      
+        We won't dive into much detail of its features here, but you can refer to [this documentation](https://www.alibabacloud.com/help/doc-detail/25367.htm) on Alibaba Cloud ECS features.
+        
+        Here is a diagram shows what a typical VPC in AliCloud looks like:
+        
+        ![alt text](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/25367/intl_en/1491882098619/ECS%20Overview%20EN.jpg.png "Concept of an ECS instance")
+        
+        Here is a screencast of Alibaba Cloud SLB console dashboard. You can have a quick look of the basic features:
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VUxEER94f5w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        
+        
+    ------
+    - #### Auto Scaling
+
+    ------
+    - #### Container Service
+
+    ------
+    - #### Elastic GPU Service
+
+
+
 - ### Storage {#storage}
     Pending update
 - ### Database {#database}
