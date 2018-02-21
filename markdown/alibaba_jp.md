@@ -17,9 +17,9 @@
     | -------- |:------------- | :------------|
     | [VPC](https://www.alibabacloud.com/product/vpc)       | バーチャルプライベートクラウド       | クラウドリソースをプライベート仮想ネットワークの分離      |
     | [Server Load Balancer](https://www.alibabacloud.com/product/server-load-balancer)       | サーバーロードバランサー       | クラウド内の複数のコンピューティングインスタンスにアプリケーショントラフィックを自動的に配信       |
-    | **Express Connect**      | Alibaba Cloudへの専用ネットワーク接続        | ネットワークとAlibaba Cloud VPC間の専用ネットワーク接続    |
-    | **Cloud DNS**       | ドメインネームサービス (DNS)        | 高可用性とスケーラビリティを備えたクラウドDNSにより、ユーザーの要求をクラウドリソースに接続      |
-    | **CDN**       | コンテンツ配信ネットワーク        | クラウド内の高度に分散されたコンテンツ配信ネットワーク     |
+    | [Express Connect](https://www.alibabacloud.com/product/express-connect)  | Alibaba Cloudへの専用ネットワーク接続        | ネットワークとAlibaba Cloud VPC間の専用ネットワーク接続    |
+    | [Cloud DNS](https://www.alibabacloud.com/product/dns)      | ドメインネームサービス (DNS)        | 高可用性とスケーラビリティを備えたクラウドDNSにより、ユーザーの要求をクラウドリソースに接続      |
+    | [CDN](https://www.alibabacloud.com/product/cdn)         | コンテンツ配信ネットワーク        | クラウド内の高度に分散されたコンテンツ配信ネットワーク     |
 
     このセクションでは、ネットワークプロダクトの概要を説明しています
 
@@ -101,12 +101,40 @@
 
 
     - #### Express Connect
+    	Express Connectは、VPCイントラネットの相互通信や閉域網やユーザー間の専用専用線接続など、さまざまなクラウド環境間で高速で安定した、安全でプライベートなまたは専用のネットワーク通信を提供します。
+
+        > Alibaba Cloud Express Connect は AWS Direct Connect と類似のサービスです。
+
+        詳細はAlibaba Cloud Express Connectの公式ドキュメントを確認してください。 [documentation here](https://www.alibabacloud.com/product/express-connect)
+
+    
     - #### Cloud DNS
-    - #### CDN
+
+        Alibaba Cloud DNS（Domain Name System）は、高可用性で拡張性の高いドメイン名解決および管理サービスです。
+
+        主な機能:
+
+        - インターネット名前解決
+        - GEO DNS
+
+        > Alibaba Cloud DNS は AWS Route53 と類似のサービスです。
+
+        詳細はAlibaba Cloud DNSの公式ドキュメントを確認してください。  [documentation here](https://www.alibabacloud.com/product/dns).
+
+    - #### Cloud CDN
+
+       Alibaba Cloud CDNは、コンテンツ配信ネットワーク（a.k.a CDN）です。 Alibaba Cloud CDNには世界中に1,200以上のノードが分散しているため、Webサイトの応答時間をミリ秒に短縮し、スムーズなビデオストリーミングを実現し、大量のトラフィックを処理できます。
+
+        > Alibaba Cloud CDN は AWS CloudFront と類似のサービスです。
+
+        - 詳細はAlibaba Cloud CDNの公式ドキュメントを確認してください。 [documentation here](https://www.alibabacloud.com/product/cdn)
 
 
 
 
 - ### Compute {#compute}
 - ### Storage {#storage}
+    Pending update
 - ### Database {#database}
+    Pending update
+
