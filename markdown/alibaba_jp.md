@@ -65,7 +65,7 @@
         | ルートテーブル内のルートエントリ最大数 | 48 | Supported |
         | VPCで実行できるクラウド製品インスタンスの最大数 | 10,000 | Unsupported |
         | VRouter | <ul><li>各VPCには1つのVRouterのみを持たせることができます。</li><li>VRouterは、BGPやOSPFなどの動的ルートプロトコルをサポートしていません。</li><li>各VRouterにはルートテーブルが1つしかありません。</li><li>ルートテーブル内のルートエントリは、VPC内のすべてのクラウド製品インスタンスに影響します。現在、ソースIPルーティングルールは、VSwitchおよびクラウド製品インスタンスではサポートされていません。</li></ul> | N/A |
-        | VSwitche | <ul><li>VSwitches はlayer-3スイッチであるため、layer-2のブロードキャストおよびマルチキャストはサポートされていません。</li><li>VSwitchが持つことができるインスタンスの数= 10,000  -  VPC内の既存のインスタンスの数</li><li>CIDRブロックは変更できません。</li></ul> | N/A |
+        | VSwitch | <ul><li>VSwitches はlayer-3スイッチであるため、layer-2のブロードキャストおよびマルチキャストはサポートされていません。</li><li>VSwitchが持つことができるインスタンスの数= 10,000  -  VPC内の既存のインスタンスの数</li><li>CIDRブロックは変更できません。</li></ul> | N/A |
 
     ------
     - #### Server Load Balancer　-サーバーロードバランサー
