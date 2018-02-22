@@ -17,9 +17,9 @@
     | -------- |:------------- | :------------|
     | [VPC](https://www.alibabacloud.com/product/vpc)       | バーチャルプライベートクラウド       | クラウドリソースをプライベート仮想ネットワークの分離      |
     | [Server Load Balancer](https://www.alibabacloud.com/product/server-load-balancer)       | サーバーロードバランサー       | クラウド内の複数のコンピューティングインスタンスにアプリケーショントラフィックを自動的に配信       |
-    | **Express Connect**      | Alibaba Cloudへの専用ネットワーク接続        | ネットワークとAlibaba Cloud VPC間の専用ネットワーク接続    |
-    | **Cloud DNS**       | ドメインネームサービス (DNS)        | 高可用性とスケーラビリティを備えたクラウドDNSにより、ユーザーの要求をクラウドリソースに接続      |
-    | **CDN**       | コンテンツ配信ネットワーク        | クラウド内の高度に分散されたコンテンツ配信ネットワーク     |
+    | [Express Connect](https://www.alibabacloud.com/product/express-connect)  | Alibaba Cloudへの専用ネットワーク接続        | ネットワークとAlibaba Cloud VPC間の専用ネットワーク接続    |
+    | [Cloud DNS](https://www.alibabacloud.com/product/dns)      | ドメインネームサービス (DNS)        | 高可用性とスケーラビリティを備えたクラウドDNSにより、ユーザーの要求をクラウドリソースに接続      |
+    | [CDN](https://www.alibabacloud.com/product/cdn)         | コンテンツ配信ネットワーク        | クラウド内の高度に分散されたコンテンツ配信ネットワーク     |
 
     このセクションでは、ネットワークプロダクトの概要を説明しています
 
@@ -101,12 +101,97 @@
 
 
     - #### Express Connect
+    	Express Connectは、VPCイントラネットの相互通信や閉域網やユーザー間の専用専用線接続など、さまざまなクラウド環境間で高速で安定した、安全でプライベートなまたは専用のネットワーク通信を提供します。
+
+        > Alibaba Cloud Express Connect は AWS Direct Connect と類似のサービスです。
+
+        詳細はAlibaba Cloud Express Connectの公式ドキュメントを確認してください。 [documentation here](https://www.alibabacloud.com/product/express-connect)
+
+    
     - #### Cloud DNS
-    - #### CDN
+
+        Alibaba Cloud DNS（Domain Name System）は、高可用性で拡張性の高いドメイン名解決および管理サービスです。
+
+        主な機能:
+
+        - インターネット名前解決
+        - GEO DNS
+
+        > Alibaba Cloud DNS は AWS Route53 と類似のサービスです。
+
+        詳細はAlibaba Cloud DNSの公式ドキュメントを確認してください。  [documentation here](https://www.alibabacloud.com/product/dns).
+
+    - #### Cloud CDN
+
+       Alibaba Cloud CDNは、コンテンツ配信ネットワーク（a.k.a CDN）です。 Alibaba Cloud CDNには世界中に1,200以上のノードが分散しているため、Webサイトの応答時間をミリ秒に短縮し、スムーズなビデオストリーミングを実現し、大量のトラフィックを処理できます。
+
+        > Alibaba Cloud CDN は AWS CloudFront と類似のサービスです。
+
+        詳細はAlibaba Cloud CDNの公式ドキュメントを確認してください。 [documentation here](https://www.alibabacloud.com/product/cdn)
+
+
+- ## 2.Compute {#compute}
+
+    `
+     Cloud IaaSプラットフォームのネイティブコンピューティングサービスは、サイズ変更可能なクラウドベースの処理能力を仮想サーバーの形で提供します。 これにより、1〜数千のインスタンスを同時にプロビジョニングし、使用するものだけを支払うことができ、Web規模のクラウドコンピューティングが容易になります。
+    `
+
+   Alibaba Cloudは以下を含むネットワーク製品のフルセットを提供します：
+
+    | サービス    | プロダクトタイプ  | 概要   |
+    | -------- |:------------- | :------------|
+    | [Elastic Compute Service (ECS)](https://www.alibabacloud.com/product/ecs)       | Elastic コンピュート（仮想サーバー）        | セキュアで、サイズ変更可能でスケーラブルな処理能力       |
+    | [Auto Scaling](https://www.alibabacloud.com/product/auto-scaling)       | オートスケール        | 自動的にECSの容量をスケールアップまたはダウンする       |
+    | [Container Service](https://www.alibabacloud.com/product/container-service)      | コンテナ Orchestration（コンテナ管理）        | フルマネージドのクラウドコンテナオーケストレーションサービス       |
+    | [Elastic GPU Service](https://www.alibabacloud.com/product/gpu)       | 並列コンピュート（GPU処理）        | ハイデマンドコンピューティングに適したGPUベースのコンピューティングサービス     |
 
 
 
+    このセクションでは、__仮想サーバーサービス__ 製品の概要を示します。
 
-- ### Compute {#compute}
+    ------
+    - #### Elastic Compute Service (ECS) - 仮想クラウドサーバー
+
+        Alibaba Cloud 公式サイトより:
+        
+        > Alibaba Cloud Elastic Compute Service（ECS）は、高速メモリと最新のIntel CPUを提供し、クラウドアプリケーションに大きな処理能力を供給し、レイテンシを短縮してより速く結果を得られます。 すべてのECSインスタンスには、DDoSおよびトロイの木馬の攻撃からデータおよびアプリケーションを保護するためのアンチDDoS保護が付属しています。
+        
+        AWSに詳しい場合、Alibaba Cloud ECSはAWS EC2と同等の製品です。 ここで興味深いのは、2018年1月現在、ECSの平均価格がEC2よりも__15％〜17％安い__ことです。ECSの価格は[こちら](http://cloudsforce.com/cost-calculator/ecs-pricing)で確認できます。
+         
+         Alibaba ECSには次の機能があります:
+
+		  - 複数のインスタンス構成/インスタンスファミリ
+		  - 複数の地域とゾーン
+		  - マシンイメージリソース
+		  - 複数のストレージ方式_（Basicクラウドディスク、Ultraクラウドディスク、SSDクラウドディスク）_
+		  - 堅牢なネットワークとセキュリティ
+		  - 管理は、コンソール、VNC、およびAPIを介して行うことができます
+		  - 2つの支払いタイプ：サブスクリプション_（予約済み）_とPay-As-You-Go _（オンデマンド）_
+              
+        その他機能の詳細はここでは詳しく説明しませんが、Alibaba Cloud ECSの機能については [こちらの公式ドキュメント](https://www.alibabacloud.com/help/doc-detail/25367.htm)を参照してください。
+        
+        下の図がAliCloudの典型的なVPCを分かりやすくしたものです:
+        
+        ![alt text](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/25367/intl_en/1491882098619/ECS%20Overview%20EN.jpg.png "Concept of an ECS instance")
+        
+		 Alibaba Cloud SLBコンソールダッシュボードの動画。基本的な機能をすばやく見ることができます:
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VUxEER94f5w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        
+        
+    ------
+    - #### Auto Scaling
+
+    ------
+    - #### Container Service
+
+    ------
+    - #### Elastic GPU Service
+
+
+
 - ### Storage {#storage}
+    Pending update
 - ### Database {#database}
+    Pending update
+ß
