@@ -184,15 +184,69 @@
     ------
     - #### Auto Scaling
 
+
+        On Alibaba Cloud official website, it states:
+        
+        > Auto Scaling is a service to automatically adjust computing resources based on your volume of user requests. When demand for computing resources increase, Auto Scaling automatically adds ECS instances to serve additional user requests, or alternatively removes instances in the case of decreased user requests.
+   
+        Auto Scaling is the very basic feature that every public cloud provides. It usually works together with Load Balancer, but it's not a requirement.
+        
+        Alibaba Auto Scaling not only provides the elastic scaling ability to ECS servers for your web workloads, but it also supports RDS database scaling. The service is free or charge and you only pay for your ECS instances in your auto scaling group. 
+        
+        Features:
+        
+        - Auto Scaling
+        - Support Server Load Balancer (SLB) Configuration
+        - Support RDS Whitelist
+        - Scheduled Scaling
+        - Alerts
+        
+               
+        We won't dive into much detail of its features here, but you can refer to Alibaba Cloud Auto Scaling [getting started guide](https://www.alibabacloud.com/product/auto-scaling?#getting-started).
+        
+        Here is a diagram shows how a scale-in and scale-out process look like:
+        
+        ![alt text](https://img.alicdn.com/tps/TB1W8DeMVXXXXXzXVXXXXXXXXXX-720-540.png_.webp "Concept of an ECS instance")
+        
+        Here is a screencast of Alibaba Cloud Auto Scaling console. You can have a quick look of the basic features:
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/KBzTTZODxI0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        
     ------
     - #### Container Service
+
+        Alibaba Container Service is a container (currently only Docker) management service that provides containerized application lifecycle management. 
+        It can be integrated with Server Load Balancer, VPC, and other Alibaba Cloud services.
+
+        > Think of Alibaba Container Service as AWS Elastic Container Service (ECS)
+        
+        Features:
+        
+        - Supports Swarm & Kubernetes
+        - Managed _network_, _storage_, _self-healing_, _monitoring_, _scheduling_ and _routing_
+        - Compatible with standard docker APIs
+        - Scheduling policies
+
+        We won't dive into much detail of its features here, but you can view official Continer Service [documentation here](https://www.alibabacloud.com/product/container-service)
+        
 
     ------
     - #### Elastic GPU Service
 
+        On Alibaba Cloud official website, it states:
 
-
-- ### Storage {#storage}
+        > Elastic GPU Service (EGS) is a powerful GPU-based computing service suited for high-demand computing, including video decoding, graphics rendering, deep learning, and scientific computation. The service boosts fast speed, strong concurrent computing, and floating point computing capabilities.
+        
+        Ideal for industries:
+        
+        - Graphic Design
+        - Video Rendering
+        - Computing
+        - Deep Learning
+        
+        We won't dive into much detail of its features here, but you can refer to Alibaba Cloud Auto Scaling [getting started guide](https://www.alibabacloud.com/product/gpu).
+       
+- ## 3.Storage {#storage}
     Pending update
-- ### Database {#database}
+- ## 4.Database {#database}
     Pending update
