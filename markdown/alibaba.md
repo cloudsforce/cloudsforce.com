@@ -229,6 +229,10 @@
 
         We won't dive into much detail of its features here, but you can view official Continer Service [documentation here](https://www.alibabacloud.com/product/container-service)
         
+        
+        Here is a screencast of Alibaba Cloud Auto Scaling console. You can have a quick look of the basic features:
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uSw2DzRqZXs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
     ------
     - #### Elastic GPU Service
@@ -245,6 +249,7 @@
         - Deep Learning
         
         We won't dive into much detail of its features here, but you can refer to Alibaba Cloud Auto Scaling [getting started guide](https://www.alibabacloud.com/product/gpu).
+       
        
 - ## 3.Storage {#storage}
     Pending update
