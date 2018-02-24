@@ -114,7 +114,7 @@
 
         主な機能:
 
-        - インターネット名前解決
+        - Mapping Between Domain Names and IP Addresses
         - GEO DNS
 
 
@@ -161,13 +161,13 @@
          
          Alibaba ECSには次の機能があります:
 
-        - 複数のインスタンス構成/インスタンスファミリ
-        - 複数の地域とゾーン
-        - マシンイメージリソース
-        - 複数のストレージ方式_（Basicクラウドディスク、Ultraクラウドディスク、SSDクラウドディスク）_
-        - 堅牢なネットワークとセキュリティ
-        - 管理は、コンソール、VNC、およびAPIを介して行うことができます
-        - 2つの支払いタイプ：サブスクリプション_（予約済み）_とPay-As-You-Go _（オンデマンド）_
+        - Multiple instance configuration / instance family
+        - Multiple regions and zones
+        - Machine image resources
+        - Multiple storage methods _(Basic Cloud Disks, Ultra Cloud Disks, and SSD Cloud Disks)_
+        - Robust network and security
+        - Management can be done through console, VNC, and APIs
+        - Two payment types: Subscription _(reserved)_ and Pay-As-You-Go _(on-demand)_
               
         その他機能の詳細はここでは詳しく説明しませんが、Alibaba Cloud ECSの機能については [こちらの公式ドキュメント](https://www.alibabacloud.com/help/doc-detail/25367.htm)を参照してください。
         
@@ -233,21 +233,24 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/uSw2DzRqZXs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
     ------
-    - #### Elastic GPU Service
+    - #### Elastic GPU Service (EGS)
 
-        On Alibaba Cloud official website, it states:
-
-        > Elastic GPU Service (EGS) is a powerful GPU-based computing service suited for high-demand computing, including video decoding, graphics rendering, deep learning, and scientific computation. The service boosts fast speed, strong concurrent computing, and floating point computing capabilities.
+        Alibaba Cloud 公式サイトより:
+	
+	
+        > Elastic GPU Service (EGS) は、ビデオデコード、グラフィックスレンダリング、ディープラーニング、科学計算などの高い性能を必要とするコンピューティングに適した強力なGPUベースのコンピューティングサービスです。 このサービスは、高速、強力な並行コンピューティング、および浮動小数点計算機能を向上させます。
+	
         
-        Ideal for industries:
+        次の用途に利用可能:
         
         - Graphic Design
         - Video Rendering
         - Computing
         - Deep Learning
-        
-        We won't dive into much detail of its features here, but you can refer to Alibaba Cloud Auto Scaling [getting started guide](https://www.alibabacloud.com/product/gpu).
-       
+	
+	
+        その他機能の詳細はここでは詳しく説明しませんが、Elastic GPU Service (EGS)の機能については[こちらの公式ドキュメント](https://www.alibabacloud.com/product/gp)を参照してください。
+      
        
 - ## 3.Storage {#storage}
     Pending update
