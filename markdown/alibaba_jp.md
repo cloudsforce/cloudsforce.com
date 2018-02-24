@@ -175,7 +175,7 @@
         
         ![alt text](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/25367/intl_en/1491882098619/ECS%20Overview%20EN.jpg.png "Concept of an ECS instance")
         
-		 Alibaba Cloud SLBコンソールダッシュボードの動画。基本的な機能をすばやく見ることができます:
+		 Alibaba Cloud ECSコンソールの動画。基本的な機能をすばやく見ることができます:
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/VUxEER94f5w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
@@ -212,24 +212,23 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/KBzTTZODxI0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         
     ------
-    - #### Container Service
+    - #### Container Service - スケーラブルな Docker コンテナー管理サービス
 
-        Alibaba Container Service is a container (currently only Docker) management service that provides containerized application lifecycle management. 
-        It can be integrated with Server Load Balancer, VPC, and other Alibaba Cloud services.
+        Alibaba Container Serviceは、コンテナ化されたアプリケーションライフサイクル管理を提供するコンテナ（現在はDockerのみ）管理サービスです。これは、Server Load Balancer、VPC、およびその他のAlibaba Cloudサービスと統合することができます。
 
-        > Think of Alibaba Container Service as AWS Elastic Container Service (ECS)
-        
-        Features:
+        > Alibaba Container Service は AWS Elastic Container Service (ECS) と類似のサービスです。
+	
+        Container Serviceには次の機能があります:
+	
         
         - Supports Swarm & Kubernetes
         - Managed _network_, _storage_, _self-healing_, _monitoring_, _scheduling_ and _routing_
         - Compatible with standard docker APIs
         - Scheduling policies
 
-        We won't dive into much detail of its features here, but you can view official Continer Service [documentation here](https://www.alibabacloud.com/product/container-service)
-        
-        
-        Here is a screencast of Alibaba Cloud Auto Scaling console. You can have a quick look of the basic features:
+        その他機能の詳細はここでは詳しく説明しませんが、Continer Serviceの機能については[こちらの公式ドキュメント](https://www.alibabacloud.com/product/container-service)を参照してください。
+                
+        Alibaba Container Serviceコンソールの動画。基本的な機能をすばやく見ることができます:
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/uSw2DzRqZXs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
