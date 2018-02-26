@@ -38,7 +38,7 @@ if(!in_array($_SERVER['REMOTE_ADDR'], array(
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date())；
+      gtag('js', new Date());
       gtag('config', 'UA-112761336-3');
     </script>
 	  
