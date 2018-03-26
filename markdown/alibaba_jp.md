@@ -114,8 +114,9 @@
 
         主な機能:
 
-        - インターネット名前解決
+        - Mapping Between Domain Names and IP Addresses
         - GEO DNS
+
 
         > Alibaba Cloud DNS は AWS Route53 と類似のサービスです。
 
@@ -160,13 +161,13 @@
          
          Alibaba ECSには次の機能があります:
 
-		  - 複数のインスタンス構成/インスタンスファミリ
-		  - 複数の地域とゾーン
-		  - マシンイメージリソース
-		  - 複数のストレージ方式_（Basicクラウドディスク、Ultraクラウドディスク、SSDクラウドディスク）_
-		  - 堅牢なネットワークとセキュリティ
-		  - 管理は、コンソール、VNC、およびAPIを介して行うことができます
-		  - 2つの支払いタイプ：サブスクリプション_（予約済み）_とPay-As-You-Go _（オンデマンド）_
+        - Multiple instance configuration / instance family
+        - Multiple regions and zones
+        - Machine image resources
+        - Multiple storage methods _(Basic Cloud Disks, Ultra Cloud Disks, and SSD Cloud Disks)_
+        - Robust network and security
+        - Management can be done through console, VNC, and APIs
+        - Two payment types: Subscription _(reserved)_ and Pay-As-You-Go _(on-demand)_
               
         その他機能の詳細はここでは詳しく説明しませんが、Alibaba Cloud ECSの機能については [こちらの公式ドキュメント](https://www.alibabacloud.com/help/doc-detail/25367.htm)を参照してください。
         
@@ -174,24 +175,85 @@
         
         ![alt text](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/25367/intl_en/1491882098619/ECS%20Overview%20EN.jpg.png "Concept of an ECS instance")
         
-		 Alibaba Cloud SLBコンソールダッシュボードの動画。基本的な機能をすばやく見ることができます:
+		 Alibaba Cloud ECSコンソールの動画。基本的な機能をすばやく見ることができます:
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/VUxEER94f5w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        
-        
+
+
     ------
     - #### Auto Scaling
 
+
+        Alibaba Cloud 公式サイトより:
+
+        > オートスケーリングは、ユーザーのリクエスト量に基づいてコンピューティングリソースを自動的に調整するサービスです。 コンピューティングリソースの利用が増加すると、オートスケーリングはECSインスタンスを自動的に追加して更なるユーザーリクエストを処理したり、ユーザーリクエストが減少した場合にインスタンスを削除したりします。
+	
+        オートスケーリングは、すべてのパブリッククラウドが提供する非常に基本的な機能です。 通常、Load Balancerと一緒に機能しますが、必須ではありません。
+	
+        Alibaba Auto Scalingは、Webワークロード用のECSサーバにエラスティックなスケーリング機能を提供するだけでなく、RDSデータベーススケーリングをサポートします。 サービスは無料または有料で、オートスケーリンググループ内のECSインスタンスの支払いのみを行います。
+	
+        Auto Scalingには次の機能があります:
+        
+        - Auto Scaling
+        - Support Server Load Balancer (SLB) Configuration
+        - Support RDS Whitelist
+        - Scheduled Scaling
+        - Alerts
+        
+        その他機能の詳細はここでは詳しく説明しませんが、Alibaba Cloud Auto Scalingの機能については[こちらの公式ドキュメント](https://www.alibabacloud.com/product/auto-scaling?#getting-started)を参照してください。
+	
+	
+        下の図がオートスケーリングのスケールインとスケールアウトの様子を分かりやすくしたものです:
+        
+        ![alt text](https://img.alicdn.com/tps/TB1W8DeMVXXXXXzXVXXXXXXXXXX-720-540.png_.webp "Concept of an ECS instance")
+        
+        Alibaba Cloud Auto Scalingコンソールの動画。基本的な機能をすばやく見ることができます:
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/KBzTTZODxI0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        
     ------
-    - #### Container Service
+    - #### Container Service - スケーラブルな Docker コンテナー管理サービス
+
+        Alibaba Container Serviceは、コンテナ化されたアプリケーションライフサイクル管理を提供するコンテナ（現在はDockerのみ）管理サービスです。これは、Server Load Balancer、VPC、およびその他のAlibaba Cloudサービスと統合することができます。
+
+        > Alibaba Container Service は AWS Elastic Container Service (ECS) と類似のサービスです。
+	
+        Container Serviceには次の機能があります:
+	
+        
+        - Supports Swarm & Kubernetes
+        - Managed _network_, _storage_, _self-healing_, _monitoring_, _scheduling_ and _routing_
+        - Compatible with standard docker APIs
+        - Scheduling policies
+
+        その他機能の詳細はここでは詳しく説明しませんが、Continer Serviceの機能については[こちらの公式ドキュメント](https://www.alibabacloud.com/product/container-service)を参照してください。
+                
+        Alibaba Container Serviceコンソールの動画。基本的な機能をすばやく見ることができます:
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uSw2DzRqZXs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
     ------
-    - #### Elastic GPU Service
+    - #### Elastic GPU Service (EGS)
 
-
-
-- ### Storage {#storage}
+        Alibaba Cloud 公式サイトより:
+	
+	
+        > Elastic GPU Service (EGS) は、ビデオデコード、グラフィックスレンダリング、ディープラーニング、科学計算などの高い性能を必要とするコンピューティングに適した強力なGPUベースのコンピューティングサービスです。 このサービスは、高速、強力な並行コンピューティング、および浮動小数点計算機能を向上させます。
+	
+        
+        次の用途に利用可能:
+        
+        - Graphic Design
+        - Video Rendering
+        - Computing
+        - Deep Learning
+	
+	
+        その他機能の詳細はここでは詳しく説明しませんが、Elastic GPU Service (EGS)の機能については[こちらの公式ドキュメント](https://www.alibabacloud.com/product/gp)を参照してください。
+      
+       
+- ## 3.Storage {#storage}
     Pending update
-- ### Database {#database}
+- ## 4.Database {#database}
     Pending update
-ß
+
