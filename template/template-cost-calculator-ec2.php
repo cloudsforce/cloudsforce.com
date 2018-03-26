@@ -12,6 +12,7 @@
                         Selecte Region:
                         <select id="region_select">
                             <option value="APN1">Asia Pacific (Tokyo)</option>
+                            <option value="Asia Pacific (Osaka-Local)">Asia Pacific (Osaka)</option>
                             <option value="APS3">Asia Pacific (Mumbai)</option>
                             <option value="APN2">Asia Pacific (Seoul)</option>
                             <option value="APS1">Asia Pacific (Singapore)</option>
@@ -186,6 +187,8 @@
                 break;
             case 'APN1':
                 return 'Asia Pacific (Tokyo)';
+            case 'Asia Pacific (Osaka-Local)':
+                return 'Asia Pacific (Osaka-Local)';
                 break;
             case 'UGW1':
                 return 'AWS GovCloud (US)';

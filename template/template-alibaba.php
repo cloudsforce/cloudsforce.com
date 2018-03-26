@@ -9,7 +9,12 @@ require __DIR__.'/ParsedownExtraPlugin.php';
 // $Parsedown = new Parsedown();
 $parser = new ParsedownExtraPlugin();
 
-$content = file_get_contents(realpath(__DIR__ . '/..').'/markdown/alibaba.md');
+if(!isset($_COOKIE['cflang']) || $_COOKIE['cflang'] === 'en') {
+    $content = file_get_contents(realpath(__DIR__ . '/..').'/markdown/alibaba.md');
+}else{
+    $content = file_get_contents(realpath(__DIR__ . '/..').'/markdown/alibaba_'.$_COOKIE['cflang'].'.md');
+}
+
 
 
 ?>
@@ -19,7 +24,9 @@ $content = file_get_contents(realpath(__DIR__ . '/..').'/markdown/alibaba.md');
     <div class="row">
         <article class="col-md-12 main-content" role="main">
             <p>
-            <span class="pull-right"><a class="github-button" href="https://github.com/cloudsforce" data-size="large" aria-label="Follow @cloudsforce on GitHub">Follow @cloudsforce</a></span>
+                <button type="button" class="btn btn-outline btn-xs btn-dark lang_sw" lang="en">English</button>
+                <button type="button" class="btn btn-outline btn-xs btn-dark lang_sw" lang="jp">日本語</button>
+                <span class="pull-right"><a class="github-button" href="https://github.com/cloudsforce" data-size="large" aria-label="Follow @cloudsforce on GitHub">Follow @cloudsforce</a></span>
             </p>
             <?php echo $parser->text($content); ?>
         </article>
